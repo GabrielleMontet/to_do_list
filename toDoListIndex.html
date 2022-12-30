@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="toDoListStyle.css">
+
+    <title>To-Do List</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="toDoListIndex.html">To-Do List</a>
+            </li>
+            <li><a href="mortgage.html">Mortgage</a></li>
+        </ul>
+    </nav>
+
+    <h1>To-Do List</h1>
+
+    <div class="add">
+        <form action="" id="formToAdd" class="add">
+            <label for="inputTask">To add a new task, type
+                the task text in the box and then click on
+                'Add Task'</label>
+            <br><br>
+            <input type="text" id="inputTask"
+                   name="inputTask">
+            <label for="inputDate">Add a due date for this
+                task, if applicable:</label>
+            <input type="date" id="inputDate"
+                   name="inputDate">
+            <br>
+            <br>
+            <button class="addButton" type="button">Add
+                Task</button>
+            <button class="removeButton"
+                    type="button">Remove
+                Task(s)</button>
+        </form>
+
+        <br>
+        <section id="tasksContainer">
+            <div id="resp-table-caption">
+                To-Do List
+            </div>
+            <div id="resp-table-header"></div>
+            <div class="table-header-cell">
+                <input type="checkbox" id="checkAll">
+            </div>
+            <div class="table-header-cell">
+                Task
+            </div>
+            <div class="table-header-cell">
+                Due Date
+            </div>
+            <div id="resp-table-body">
+            </div>
+
+        </section>
+        <script src="toDoListApp.js"></script>
+
+</body>
+
+</html>
